@@ -9,13 +9,9 @@ class MigrationController {
 	}
 	
 	def process () {
-		
 		def ruta = params.ruta
-		//def ruta = "/Users/therealthom/Desktop/SCHC1.txt"
-		if (ruta) {
-			
-			def filename = new File ("C://"+ruta);
-			//def filename = new File (ruta);
+		if (ruta) {			
+			def filename = new File (ruta);
 			println filename
 			if (filename.exists()) {
 				String[] tokens;

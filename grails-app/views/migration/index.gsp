@@ -10,8 +10,8 @@
 			<bootstrap:alert class="alert-info">${flash.message}</bootstrap:alert>
 		</g:if>
 		<g:form action="process">
-			<label for="archivo">Seleccionar archivo:</label>
-			<input type="file" name="ruta">
+			<label for="archivo">Seleccionar ruta del archivo SCHC1.txt</label>
+			<g:textField class="input-large" name="ruta" value=""/>
 			<br />
 			<g:submitButton name="accept" value="Aceptar" />
 		</g:form>
