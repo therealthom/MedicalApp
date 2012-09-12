@@ -95,9 +95,9 @@ class MigrationController {
 					}
 				}
 				String mensajes
-				mensajes += "Total Insertados: " + contGood + "<br/>"
-				mensajes += "Total omitidos: "+ contFail + "<br/>"
-				mensajes += "Total (Insertados + Omitidos): " + contTotal + "<br/>"
+				mensajes += "Total Insertados: " + contGood + " - "
+				mensajes += "Total Omitidos: "+ contFail + " - "
+				mensajes += "Total (Insertados + Omitidos): " + contTotal
 				println mensajes
 				[ mensajes : mensajes ]
 			} else {
